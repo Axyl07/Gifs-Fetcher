@@ -1,0 +1,46 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+input{
+    border-radius: 10px;
+    font-size: 1.5em;
+    width: 40vw;
+}
+.errorMsg{
+    font-size: 1.5rem;
+}
+button{
+    cursor: pointer;
+    width: 10vw;
+    font-size: 1.5em;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 160, 82);
+}
+.main{
+    margin-top: 15vh;
+    padding: 25px;
+    gap: 25px
+    ;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 100px  peachpuff;
+}

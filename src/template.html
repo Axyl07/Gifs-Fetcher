@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Gifs-Fetcher</title>
 </head>
 <body>
-    <p>HTML Test</p>
+    <div class="main">
+        <h1>Search for gifs!</h1>
+        <img style="display: none;" src="#"/>
+        <div class="errorMsg">
+
+        </div>
+        <label for="search">Search: 
+            <input type="text" id="search" name="search" required>
+        </label>
+        <label for="key">Enter Your API KEY:(Optional) 
+            <input type="text" id="key" name="key" placeholder="You'll use my key if you don't provide yours">
+        </label>
+        <button id="go">Go</button>
+        <button id="refresh">Another Gif</button>
+        
+    </div>
+    
 </body>
 </html>

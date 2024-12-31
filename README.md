@@ -1,4 +1,2 @@
+# Gif fetcher using Giphy's API with ability to search gifs using your own API Key as well
 
-# How to run :
-# 1. npm install
-# 2. npm run start (to run development server)
