@@ -24,8 +24,8 @@ async function getGif(search, key = "YdjaYfPKpSs7vatt6WSoyEBi6UobIMnC") {
   const URL = `https://api.giphy.com/v1/gifs/translate?api_key=${key}&s=${search}`;
   console.log(URL);
   const response = await fetch(URL, { mode: "cors" })
-  response.json().then(function (response) {
-    if (response.data.length === 0) {
+  const gifData = await response.json();
+    if (gifData.data.length === 0) {
       console.log('no gif found');
       img.style.display = 'none';
       errorMsgDiv.textContent = "No gifs found :("
@@ -33,8 +33,6 @@ async function getGif(search, key = "YdjaYfPKpSs7vatt6WSoyEBi6UobIMnC") {
   else {
       errorMsgDiv.textContent = "";
       img.style.display = 'block';
-      img.src = response.data.images.original.url;
-  }
-     })
-      
+      img.src = gifData.data.images.original.url;
+  }   
 }
